@@ -73,3 +73,7 @@ footer {
     height: auto;
     border-radius: 5px;
 }
+
+#video {
+    max-width: 500px;
+}
