@@ -62,7 +62,7 @@ footer {
 }
 
 .registered::after {
-  content: "®";
+  content: "UKEN 2025";
   font-size: 0.8em;
   vertical-align: super;
 }
