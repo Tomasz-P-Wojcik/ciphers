@@ -61,7 +61,7 @@ footer {
     margin-top: 20px;
 }
 
-span {
+p.registered {
   content: "\\00AE";
   font-size: 0.5em;
   font-weight: bold;
