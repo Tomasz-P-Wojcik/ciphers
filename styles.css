@@ -61,7 +61,7 @@ footer {
     margin-top: 20px;
 }
 
-p.registered:after {
+p.registered::after {
   content: "\\00AE";
   font-size: 0.8em;
   font-weight: bold;
