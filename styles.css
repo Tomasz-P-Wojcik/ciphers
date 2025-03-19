@@ -16,6 +16,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background: #444;
 }
@@ -62,8 +63,7 @@ footer {
 }
 
 .registered::after {
-  content: "(R)";
-  font-size: 0.7em;
-  font-weight: bold;
+  content: " \00AE";
+  font-size: 0.8em;
   vertical-align: super;
 }
