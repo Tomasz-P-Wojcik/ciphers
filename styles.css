@@ -60,3 +60,9 @@ footer {
     padding: 1em;
     margin-top: 20px;
 }
+
+.registered::after {
+  content: "\\00AE";
+  font-size: 0.8em;
+  vertical-align: super;
+}
