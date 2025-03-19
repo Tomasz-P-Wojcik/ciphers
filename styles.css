@@ -62,7 +62,7 @@ footer {
 }
 
 .registered::after {
-  content: "\00AE";
+  content: "(R)";
   font-size: 0.7em;
   font-weight: bold;
   vertical-align: super;
