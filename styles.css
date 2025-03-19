@@ -49,7 +49,7 @@ main {
 }
 
 .gallery img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 5px;
 }
@@ -66,4 +66,10 @@ footer {
   content: " \00AE";
   font-size: 0.8em;
   vertical-align: super;
+}
+
+.img_descr {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
