@@ -63,6 +63,6 @@ footer {
 
 span {
   content: "\00AE";
-  font-size: 0.8em;
+  font-size: 0.5em;
   vertical-align: super;
 }
