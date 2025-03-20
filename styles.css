@@ -106,11 +106,6 @@ footer {
     height: 100%;
 }
 
-video {
-    max-width: 90%;
-    max-height: 80vh;
-}
-
 .dropbtn {
     background-color: #4CAF50;
     color: white;
