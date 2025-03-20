@@ -114,7 +114,7 @@ iframe {
 
 .dropbtn {
     background-color: #4CAF50;
-    color: white;
+    color: hwb(73 0% 1%);
     padding: 10px 15px;
     font-size: 16px;
     border: none;
