@@ -120,7 +120,7 @@ iframe {
 
 .dropbtn {
     background-color: #4CAF50;
-    color: hwb(0 100% 0%);
+    color: white;
     padding: 10px 15px;
     font-size: 16px;
     border: none;
@@ -140,6 +140,8 @@ iframe {
   }
   
   .dropdown-content a {
+    border: #333;
+    border-style: solid;
     color: black;
     padding: 10px 15px;
     text-decoration: none;
