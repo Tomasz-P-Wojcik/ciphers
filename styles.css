@@ -25,6 +25,12 @@ nav ul li {
     margin: 0 0px;
 }
 
+li {
+    list-style: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
