@@ -32,6 +32,12 @@ nav ul li a {
     display: inline-block;
 }
 
+.infos ul li {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+
 nav ul li a:hover {
     background: #666;
 }
@@ -114,7 +120,7 @@ iframe {
 
 .dropbtn {
     background-color: #4CAF50;
-    color: hwb(73 0% 1%);
+    color: hwb(0 100% 0%);
     padding: 10px 15px;
     font-size: 16px;
     border: none;
