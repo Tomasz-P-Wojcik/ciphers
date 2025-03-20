@@ -106,6 +106,12 @@ footer {
     height: 100%;
 }
 
+iframe {
+    max-width: 90%;
+    max-height: 80vh;
+    border: none;
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
