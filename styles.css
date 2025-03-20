@@ -33,6 +33,7 @@ nav ul li a {
 }
 
 .infos ul li {
+    list-style: none;
     text-decoration: none;
     padding: 10px 15px;
 }
