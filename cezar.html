@@ -111,8 +111,8 @@
           <hr class="d-sm-none">
         </div>
         <div class="col-sm-6">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2020</h5>
+          <h2 class="text-center">SZYFR CEZARA</h2>
+          
           <div><img class="img-fluid d-block img-thumbnail" src="eap_mini.jpg" alt="Exitus Acta Probat"></div>
           <section>
             <h2>Opis</h2>
@@ -129,28 +129,34 @@
               Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie litera <i>a</i> itd.
             </p>
           </section>
-          <h2 class="mt-5">TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2020</h5>
+
+        <section class="bg-light">
+          <h2 class="mt-5">KODER/DEKODER</h2>
+          <h5>Formularz używający szyfru Cezara</h5>
           <div class="container">
             <div class="jumbotron">
               <form>
-                <div class="form-group">
-                  Tekst Wejściowy: <input id="haslo" type="text" name="haslo" value="" onkeyup="drukuj()">
-                  Kod: <input id="kod" type="text" name="kod" value="1" onkeyup="drukuj()">
+                <div class="form-group pt-3">
+                  <Span class="container">Tekst Wejściowy: <input id="haslo" type="text" name="haslo" value="" onkeyup="drukuj()"></Span>
+                  <br>
+                  <Span class="container">Kod: <input id="kod" type="text" name="kod" value="1" onkeyup="drukuj()"></Span>
                   <br>
               </form>
             </div>
 
-            <div>
+            <div class="container">
               <span>Tekst kodowany:<span id="kodowany"></span>
             </div>
             <br>
-            <div>
+            <div class="container">
               <span>Tekst dekodowany:<span id="dekodowany"></span>
             </div>
           </div>
+        
+
         </div>
         </script>
+      </section>
       </div>
 
       <div class="col-sm-3">
