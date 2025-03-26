@@ -5,7 +5,7 @@ function drukuj() {
     }
     function SzyfrCezara(TekstWejsciowy, liczba) {
     var MałeLitery = TekstWejsciowy.toLowerCase();
-    var alfabet ="aąbcćdeęfghijklłmnńoóprsśtuwyzźż".split('');
+    var alfabet ="abcdefghijklmnopqrstuwyz".split('');
     liczba = liczba % alfabet.length;
     var TekstWyjsciowy = "";
     for(var i=0; i<MałeLitery.length; i++) {
