@@ -1,6 +1,6 @@
 function drukuj() {
     document.getElementById('kodowany').innerHTML= SzyfrCezara(document.getElementById('haslo').value,document.getElementById('kod').value) ;
-    document.getElementById('dekodowany').innerHTML= SzyfrCezara(document.getElementById('haslo').value,-(document.getElementById('kod').value)) ;
+    document.getElementById('dekodowany').innerHTML= " "+SzyfrCezara(document.getElementById('haslo').value,-(document.getElementById('kod').value)) ;
     
     }
     function SzyfrCezara(TekstWejsciowy, liczba) {
