@@ -7,9 +7,12 @@
     background-image: url("mainbg.jpg");
 }
 
+
 .myhdr {
-    background-image: url("mainbg_head.jpg");
+    background: #fff9f9;
 }
+
+
 
 h1 {
     font-size: xx-large;
