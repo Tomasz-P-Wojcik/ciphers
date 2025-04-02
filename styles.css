@@ -42,11 +42,3 @@ h6 {
     display: none;
   }
 
-  .spanhov:focus {
-	display: none;
-}
-
-
-.spanhov:focus + .hide  {
-    display: block;
-  }
