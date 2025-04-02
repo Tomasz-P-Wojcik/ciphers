@@ -32,10 +32,11 @@ h6 {
     display: none;
   }
       
-  .spanhov:hover + .hide {
+  .spanhov:hover + .hide, .spanhov:active + .hide  {
     display: block;
   }
 
-  .spanhov:hover {
+  .spanhov:hover, .spanhov:active {
     display: none;
   }
+
