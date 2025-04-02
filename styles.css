@@ -40,9 +40,3 @@ h6 {
     display: none;
   }
 
-  @media(hover: hover) and (pointer: fine) {
-    .spanhov:hover + .hide  {
-        display: block;
-      }
-}
-
