@@ -31,6 +31,8 @@ h6 {
 .hide {
     display: none;
   }
+
+
       
   .spanhov:hover + .hide  {
     display: block;
@@ -40,3 +42,11 @@ h6 {
     display: none;
   }
 
+  .spanhov:focus {
+	display: none;
+}
+
+
+.spanhov:focus + .hide  {
+    display: block;
+  }
