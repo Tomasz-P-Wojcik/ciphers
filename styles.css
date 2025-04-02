@@ -9,10 +9,17 @@
 
 
 .myhdr {
-    background: #fff9f9;
+    background: hsl(203, 84%, 88%);
 }
 
+.mybg {
+    background-image: url("mainbg_manuscript.jpg");
+}
 
+article.mytxt {
+text-indent: 2em;
+
+}
 
 h1 {
     font-size: xx-large;
@@ -31,8 +38,6 @@ h6 {
 .hide {
     display: none;
   }
-
-
       
   .spanhov:hover + .hide  {
     display: block;

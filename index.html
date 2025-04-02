@@ -3,160 +3,180 @@
 
 
 <head>
-    <title>Szyfrowanie i Kody - Wprowadzenie</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="cezar.js"></script>
+  <title>Szyfrowanie i Kody - Wprowadzenie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cezar.js"></script>
 
 </head>
 
 <body>
 
-    <div class="all bg-light">
+  <div class="all bg-light">
 
-        <div class="container pt-5 justify-content-center d-flex flex-column bg-light">
-            <h1 class="display-2 fst-bold">Szyfry i Kody*</h1>
-            <span class="text-end fst-italic small">*Zakątek w sieci gdzie zaczerpniesz garść wiedzy <br>na temat
-                popularnych sposobów szyfrowania</h6>
-        </div>
-
-
-        <div class="container pt-1 bg-light">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand px-3" href="#"><span class="display-5 fst-bold">&#128273;</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse bold-nav-ft" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Strona główna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ciekawostki.html">Aktualności</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="true">Szyfry</a>
-                            <ul class="dropdown-menu">
-                                <a class="dropdown-item" href="cezar.html">Szyfr Cezara</a>
-                                <a class="dropdown-item" href="ramsay.html">Szyfr Hamsaya</a>
-                                <a class="dropdown-item" href="vernam.html">Szyfr Vernama</a>
-                                <a class="dropdown-item" href="vigenere.html">Szyfr Vigenère’a</a>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <a class="dropdown-item" href="hamming.html">Kodowanie Hamminga</a>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="container pt-3 myhdr">
-            <div class="row">
-                <div class="col-sm-2">
-                    
-                    <div class="p-1">
-                    <div class="spanhov"><img class="img-fluid img-thumbnail justify-content-center d-flex d-block" src="my_photo_main.jpg"
-                        alt="Konczysta - kopczyk" /></div>
-                     <div class="hide"><img tabindex="0" class="img-fluid img-thumbnail justify-content-center d-flex d-block"
-                            src="my_photo_hov.jpg" alt="Autor" /></div></div>
+    <div class="mybg container pt-5 justify-content-center d-flex flex-column">
+      <h1 class="display-2 fw-bold">Szyfry i Kody*</h1>
+      <span class="text-end fst-italic small"><mark>*Zakątek w sieci gdzie zaczerpniesz garść wiedzy <br>na temat
+        popularnych sposobów szyfrowania</mark></span>
+      </div>
     
-                    <p class="mt-4 p-1"><span class="bold-nav-ft">O mnie &#128071; </span><br> Tomek - Fascynat Tatr, Muzyki i Matematyki =>
-                        Górskie wędrówki, koncerty i łamigłówki</p>
-                    <h5 class="mt-4 p-1">Przydatne źródła</h5>
-                    <p class="px-1">Pomocne zasoby sieciowe</p>
-                    <ul class="nav nav-pills flex-sm-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://rumkin.com/tools/cipher/">Rumkin-cipher</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://en.wikipedia.org/">Wikipedia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://semiengineering.com/the-secret-world-of-ciphers/">Secret World</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://crypto.interactive-maths.com/pigpen-cipher.html">Pigpen-cipher</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://home.agh.edu.pl/~horzyk/lectures/bdk/BDK-KryptografiaKryptoanaliza.pdf">Wykład A. Horzyka</a>
-                      </li>
-                        
-                    </ul>
-                    <hr class="d-sm-none">
-                </div>
-                <div class="col-sm-6 px-5 bg-light">
-                                       
-                    <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="eap_mini.jpg" alt="Exitus Acta Probat"></div>
-                    <span class="m-3 d-flex justify-content-end fst-italic small bold-nav-ft">Exitus Acta Probat - Wynik Mierzy Czyny</span>
-                    <h2 class="display-6 mb-3 mt-4 d-flex justify-content">Dlaczego szyfrujemy?</h2>
-                    <p>Szyfrowanie danych jest procesem, który polega na przekształcaniu informacji w taki sposób, że
-                        stają się niezrozumiałe dla osób nieuprawnionych. Szyfrowanie danych ma na celu zapewnienie
-                        poufności, integralności i autentyczności danych, a także zapobieganie ich kradzieży,
-                        manipulacji lub utracie. Szyfr to algorytm służący do zaszyfrowania i odszyfrowania wiadomości.</p>
 
-                    <ul>
-                        <li>Poufność danych - zastosowanie odpowiednich algorytmów szyfrowania pozwala przekształcić
-                            dane w taki sposób, żeby były one nieczytelne dla podmiotów (osób lub systemów)
-                            nieposiadających odpowiedniego klucza do zdekodowania zasobów</li>
-                        <li>Integralność danych - szyfrowanie pozwala uchronić dane przed modyfikacją podczas ich
-                            transmisji bądź przechowywania bez wiedzy i zgody właściciela danych</li>
-                        <li>Uwierzytelnienie - możliwe jest uwierzytelnienie tożsamości strony internetowej, aplikacji
-                            bądź użytkownika przy pomocy certyfikatów SSL/TLS, dzięki czemu użytkownik będzie miał
-                            pewność, że łączy się z prawdziwym serwerem danej strony czy aplikacji</li>
-                        <li>Ochronę przed atakami - istotne jest szyfrowanie danych w celu zapewnienia ochrony
-                            informacji przed różnymi atakami cybernetycznymi, takimi jak Man-in-the-Middle,
-                            podsłuchiwanie informacji przepływających w ruchu sieciowym czy wstrzyknięcie danych</li>
-                        <li>Niezaprzeczalność - dzięki odpowiednio skonfigurowanej infrastrukturze kryptograficznej
-                            odbiorca może dowieść, że dane zostały przesłane przez danego nadawcę, a nadawca nie może
-                            zaprzeczyć wysłania tych danych.</li>
-                    </ul>
 
-                    <h2 class="display-6 mt-5 mb-3 d-flex justify-content">Główny podział szyfrów</h2>
-                    <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="symetric.png" alt="Symetric vs antisymetric"></div>
-                    <p>Szyfry dzieli się na:</p>
-                    <ul>
-                      <li>Symetryczne - wykorzystują do szyfrowania i odszyfrowania ten szyfrujący, który w związku z tym musi być chroniony</li>
-                      <li>Asymetryczne - wykorzystują parę kluczy drugi do odszyfrowania. szyfrujących, jeden Działają zwykle dużo wolniej niż Szybkość szyfrowania i deszyfrowania stosuje się klucze asymetryczne do ma istotne znaczenie zaszyfrowania i sam klucz do szyfrowania szyfry symetryczne.</li>
-            
-                  </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Dec 7, 2020</h5>
-                    <div class="mojobraz">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco.</p>
+    <div class="container pt-1 bg-light">
 
-                    <h2 class="mt-5">TITLE HEADING</h2>
-                    <h5>Title description, Sep 2, 2020</h5>
-                    <div class="mojobraz">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco.</p>
-                </div>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand px-3" href="#"><span class="display-5 fst-bold">&#128273;</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bold-nav-ft" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ciekawostki.html">Aktualności</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="true">Szyfry</a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="cezar.html">Szyfr Cezara</a>
+                <a class="dropdown-item" href="ramsay.html">Szyfr Hamsaya</a>
+                <a class="dropdown-item" href="vernam.html">Szyfr Vernama</a>
+                <a class="dropdown-item" href="vigenere.html">Szyfr Vigenère’a</a>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <a class="dropdown-item" href="hamming.html">Kodowanie Hamminga</a>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <div class="mt-5 p-4 bg-dark text-white text-center">
-            <p>Tomasz Wójcik - UKEN 2025&#174</p>
-        </div>
+      </nav>
     </div>
-</body>
 
+    <div class="container px-3 myhdr">
+      <div class="row">
+        <div class="col-sm-2">
+
+          <div class="p-1 pt-3">
+            <div class="spanhov"><img class="img-fluid img-thumbnail justify-content-center d-flex d-block"
+                src="my_photo_main.jpg" alt="Konczysta - kopczyk" /></div>
+            <div class="hide"><img tabindex="0" class="img-fluid img-thumbnail justify-content-center d-flex d-block"
+                src="my_photo_hov.jpg" alt="Autor" /></div>
+          </div>
+
+          <p class="mt-4 p-1"><span class="bold-nav-ft">O mnie &#128071; </span><br> Tomek - Fascynat Tatr, Muzyki i
+            Matematyki =>
+            Górskie wędrówki, koncerty i łamigłówki</p>
+          <h5 class="mt-4 p-1">Przydatne źródła</h5>
+          <p class="px-1">Pomocne zasoby sieciowe</p>
+          <ul class="nav nav-pills flex-sm-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://rumkin.com/tools/cipher/">Rumkin-cipher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://en.wikipedia.org/">Wikipedia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://semiengineering.com/the-secret-world-of-ciphers/">Secret World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://crypto.interactive-maths.com/pigpen-cipher.html">Pigpen-cipher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://home.agh.edu.pl/~horzyk/lectures/bdk/BDK-KryptografiaKryptoanaliza.pdf">Wykład A.
+                Horzyka</a>
+            </li>
+
+          </ul>
+          <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-6 px-5 bg-light">
+
+          <div class="mb-3 pt-2"><img class="img-fluid d-block img-thumbnail" src="eap_mini.jpg"
+              alt="Exitus Acta Probat"></div>
+          <span class="m-3 d-flex justify-content-end fst-italic small bold-nav-ft">Exitus Acta Probat - Wynik Mierzy
+            Czyny</span>
+          <h2 class="display-6 mb-3 mt-4 d-flex justify-content">Dlaczego szyfrujemy?</h2>
+          <article class="mytxt pt-2">Szyfr to algorytm służący do zaszyfrowania i odszyfrowania wiadomości.
+            Szyfrowanie danych jest procesem, który polega na przekształcaniu informacji w taki sposób, że
+            stają się niezrozumiałe dla osób nieuprawnionych.</article>
+          <article class="mytxt pb-3">Proces ten ma na celu zapewnienie
+            poufności, integralności i autentyczności danych, a także zapobieganie ich kradzieży,
+            manipulacji lub utracie. </article>
+
+          <ul>
+            <li><span class="fw-bold">Poufność danych</span> - zastosowanie odpowiednich algorytmów szyfrowania pozwala
+              przekształcić
+              dane w taki sposób, żeby były one nieczytelne dla podmiotów (osób lub systemów)
+              nieposiadających odpowiedniego klucza do zdekodowania zasobów</li>
+            <li><span class="fw-bold">Integralność danych</span> - szyfrowanie pozwala uchronić dane przed modyfikacją
+              podczas ich
+              transmisji bądź przechowywania bez wiedzy i zgody właściciela danych</li>
+            <li><span class="fw-bold">Uwierzytelnienie</span> - możliwe jest uwierzytelnienie tożsamości strony
+              internetowej, aplikacji
+              bądź użytkownika przy pomocy certyfikatów SSL/TLS, dzięki czemu użytkownik będzie miał
+              pewność, że łączy się z prawdziwym serwerem danej strony czy aplikacji</li>
+            <li><span class="fw-bold">Ochronę przed atakami</span> - istotne jest szyfrowanie danych w celu zapewnienia
+              ochrony
+              informacji przed różnymi atakami cybernetycznymi, takimi jak Man-in-the-Middle,
+              podsłuchiwanie informacji przepływających w ruchu sieciowym czy wstrzyknięcie danych</li>
+            <li><span class="fw-bold">Niezaprzeczalność</span> - dzięki odpowiednio skonfigurowanej infrastrukturze
+              kryptograficznej
+              odbiorca może dowieść, że dane zostały przesłane przez danego nadawcę, a nadawca nie może
+              zaprzeczyć wysłania tych danych.</li>
+          </ul>
+
+          <h2 class="display-6 mt-5 mb-3 d-flex justify-content">Główny podział szyfrów</h2>
+          <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="symetric.png"
+              alt="Symetric vs antisymetric"></div>
+          <p>Szyfry dzieli się na:</p>
+          <ul>
+            <li>Symetryczne - wykorzystują do szyfrowania i odszyfrowania ten szyfrujący, który w związku z tym musi być
+              chroniony</li>
+            <li>Asymetryczne - wykorzystują parę kluczy drugi do odszyfrowania. szyfrujących, jeden Działają zwykle dużo
+              wolniej niż Szybkość szyfrowania i deszyfrowania stosuje się klucze asymetryczne do ma istotne znaczenie
+              zaszyfrowania i sam klucz do szyfrowania szyfry symetryczne.</li>
+
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2020</h5>
+          <div class="mojobraz">Fake Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.</p>
+
+          <h2 class="mt-5">TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2020</h5>
+          <div class="mojobraz">Fake Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+    
+
+
+  </div>
+</body>
+<footer>
+  <div class=" container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center">
+    <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174</p>
+  </div>
+</footer>
+</div>
 </html>
