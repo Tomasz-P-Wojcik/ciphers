@@ -73,7 +73,7 @@ h6 {
     border-width: 3px;
     border-style: solid;
     border-color: black;
-    border-radius: 3em;
+    border-radius: 1em;
     margin-right:  2em;
     margin-top:  0.3em;
     color: black;
@@ -84,5 +84,25 @@ h6 {
 .navbar-nav > .nav-item > .nav-link {
     color: black;
 }
+
+.dropdown-menu {
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1em;
+        margin-right:  2em;
+        margin-top:  0.3em;
+        color: black;
+        background-color:goldenrod;
+        text-align: center;
+    }
+
+    .dropdown-menu > .dropdown-item:hover {
+        border-radius: 1em;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+    }
+
 
 
