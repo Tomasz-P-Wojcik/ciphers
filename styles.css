@@ -68,4 +68,17 @@ h6 {
     border-radius: 0.5em;
 }
 
+.navbar-nav > .nav-item {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 4px;
+    color: black;
+    background-color:goldenrod;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+    color: black;
+}
+
 
