@@ -112,12 +112,20 @@ h6 {
         margin-top: 2px;
         color: blue;
         text-align: right;
+        text-wrap:initial;
 
     }
 
     .nav > .nav-item> .nav-link:hover {
         
         background-color: aquamarine;
+
+    }
+
+    .nav > .nav-item> .nav-link::before{
+        
+        padding-right: 5px;
+        content: " ⇒ ";
 
     }
 
