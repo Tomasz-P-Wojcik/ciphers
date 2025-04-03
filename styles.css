@@ -104,5 +104,21 @@ h6 {
         border-color: black;
     }
 
+    .nav > .nav-item> .nav-link{
+        
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        margin-top: 2px;
+        color: blue;
+
+    }
+
+    .nav > .nav-item> .nav-link:hover {
+        
+        background-color: aquamarine;
+
+    }
+
 
 
