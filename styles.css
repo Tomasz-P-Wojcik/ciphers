@@ -52,3 +52,15 @@ h6 {
 
   }
 
+  .content {
+    background-color: rgb(204, 204, 204); 
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+.content2 {
+    background-color: rgb(204, 204, 204); 
+    background-color: rgba(204, 204, 204, 0.7);
+    padding: 0.11em;
+}
+
+
