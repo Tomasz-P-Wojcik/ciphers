@@ -16,7 +16,7 @@
     background-image: url("mainbg_manuscript.jpg");
 }
 
-article.mytxt , .col-sm-4 > div > p {
+p.mytxt , .col-sm-4 > div > p {
 text-indent: 2em;
 
 }
