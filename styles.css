@@ -9,17 +9,13 @@
 
 
 .myhdr {
-    background: hsl(203, 84%, 88%);
+    background-color:lightgray; 
 }
 
 .mybg {
     background-image: url("mainbg_manuscript.jpg");
 }
 
-p.mytxt , .col-sm-4 > div > p {
-text-indent: 2em;
-
-}
 
 h1 {
     font-size: xx-large;
@@ -56,29 +52,36 @@ h6 {
     background-color: rgb(204, 204, 204); 
     background-color: rgba(204, 204, 204, 0.5);
     padding: 0.12em;
+    border-radius: 1em;
 }
 
 .content2 {
     background-color: rgb(204, 204, 204); 
     background-color: rgba(204, 204, 204, 0.75);
-    padding: 0.12em;
+    padding: 0.3em;
+    border-radius: 1em;
 }
 
 .myborder {
-    border-radius: 0.5em;
+    border-radius: 0.3em;
 }
 
 .navbar-nav > .nav-item {
-    min-width: 135px;
-    border-width: 3px;
+    min-width: 155px;
+    border-width: 1px;
     border-style: solid;
-    border-color: black;
-    border-radius: 1em;
+    border-color: darkgray;
+    border-radius: 0.7em;
     margin-right:  2em;
-    margin-top:  0.3em;
+    
     color: black;
-    background-color:goldenrod;
+    background-color:lightgray;
     text-align: center;
+    padding: 0.4em;
+}
+
+.navbar-nav > .nav-item:hover {
+    background-color:whitesmoke;
 }
 
 .navbar-nav > .nav-item > .nav-link {
@@ -86,31 +89,37 @@ h6 {
 }
 
 .dropdown-menu {
-        border-width: 3px;
+        border-width: 1px;
         border-style: solid;
-        border-color: black;
-        border-radius: 1em;
-        margin-right:  2em;
-        margin-top:  0.3em;
-        color: black;
-        background-color:goldenrod;
-        text-align: center;
+        border-color: darkgray;
+        border-radius: 0.5em;
+        background-color:lightgray;
+        
+    }
+
+    .dropdown-menu > .nav-item> .dropdown-item {
+        font-weight: bold;
+        border-radius: 0.5em;
+        border-width: 1px;
+        border-style: solid;
+        border-color:darkgray;
     }
 
     .dropdown-menu > .nav-item> .dropdown-item:hover {
-        border-radius: 1em;
-        border-width: 3px;
+        border-radius: 0.5em;
+        border-width: 1px;
         border-style: solid;
-        border-color: black;
+        border-color: darkgray;
+        background-color:whitesmoke;
     }
 
     .nav > .nav-item> .nav-link{
         
         border-width: 1px;
         border-style: solid;
-        border-color: black;
-        margin-top: 2px;
+        border-color:darkgray;
         color: blue;
+        background-color:gainsboro;
         text-align: right;
         text-wrap:initial;
 
@@ -118,7 +127,9 @@ h6 {
 
     .nav > .nav-item> .nav-link:hover {
         
-        background-color: aquamarine;
+        background-color:whitesmoke;
+        color:darkblue;
+        font-weight: bold;
 
     }
 
