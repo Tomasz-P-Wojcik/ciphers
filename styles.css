@@ -72,12 +72,13 @@ h6 {
     border-style: solid;
     border-color: darkgray;
     border-radius: 0.7em;
-    margin-right:  2em;
+    margin-right:  1em;
+    padding: 0.4em;
     
     color: black;
     background-color:lightgray;
     text-align: center;
-    padding: 0.4em;
+    padding: 0.2em;
 }
 
 .navbar-nav > .nav-item:hover {
@@ -93,7 +94,8 @@ h6 {
         border-style: solid;
         border-color: darkgray;
         border-radius: 0.5em;
-        background-color:lightgray;
+        background-color:azure;
+        padding: 0.4em;
         
     }
 
@@ -102,7 +104,9 @@ h6 {
         border-radius: 0.5em;
         border-width: 1px;
         border-style: solid;
+        margin-bottom: 2px;
         border-color:darkgray;
+        background-color:lightgray;
     }
 
     .dropdown-menu > .nav-item> .dropdown-item:hover {
