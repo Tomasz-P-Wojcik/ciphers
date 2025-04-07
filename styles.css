@@ -150,5 +150,26 @@ h6 {
 
     }
 
+    .active {
+        background-color:#aaa;
+        border-radius: 0.4em;
+    }
+
+
+    details > summary {
+        display: block;
+        padding: 4px;
+        background-color: #eeeeee;
+        border: none;
+        box-shadow: 1px 1px 2px #bbbbbb;
+        cursor: pointer;
+      }
+      
+      details > p {
+        background-color: #eeeeee;
+        padding: 4px;
+        margin: 0;
+        box-shadow: 1px 1px 2px #bbbbbb;
+      }
 
 
