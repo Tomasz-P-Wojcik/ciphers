@@ -76,13 +76,13 @@ h6 {
     padding: 0.4em;
     
     color: black;
-    background-color:goldenrod;
+    background-color:gold;
     text-align: center;
     padding: 0.2em;
 }
 
 .navbar-nav > .nav-item:hover {
-    background-color:gold;
+    background-color:goldenrod;
 }
 
 .navbar-nav > .nav-item > .nav-link {
@@ -94,7 +94,7 @@ h6 {
         border-style: solid;
         border-color :black;
         border-radius: 0.5em;
-        background-color:goldenrod;
+        background-color:gold;
         padding: 0.4em;
         
     }
@@ -105,16 +105,16 @@ h6 {
         border-width: 2px;
         border-style: solid;
         margin-bottom: 2px;
-        border-color: goldenrod;
-        background-color:goldenrod;
+        border-color: gold;
+        background-color:gold;
     }
 
     .dropdown-menu > .nav-item> .dropdown-item:hover {
         border-radius: 0.5em;
         border-width: 2px;
         border-style: solid;
-        border-color: goldenrod;
-        background-color:gold;
+        border-color: gold;
+        background-color:goldenrod;
         
     }
 
@@ -138,7 +138,7 @@ h6 {
 
     }
 
-    .nav > .nav-item> .nav-link::before{
+    .nav > .nav-item > .nav-link::before{
         
         padding-right: 5px;
         content: " ⇒ ";
@@ -151,7 +151,7 @@ h6 {
     }
 
     .active {
-        background-color:gold;
+        background-color:goldenrod;
         border-radius: 0.4em;
     }
 
@@ -172,46 +172,7 @@ h6 {
         box-shadow: 1px 1px 2px #bbbbbb;
       }
 
-      .photo-gallery {
-        color:#313437;
-        background-color:#fff;
-      }
-      
-      .photo-gallery p {
-        color:#7d8285;
-      }
-      
-      .photo-gallery h2 {
-        font-weight:bold;
-        margin-bottom:40px;
-        padding-top:40px;
-        color:inherit;
-      }
-      
-      @media (max-width:767px) {
-        .photo-gallery h2 {
-          margin-bottom:25px;
-          padding-top:25px;
-          font-size:24px;
-        }
-      }
-      
-      .photo-gallery .intro {
-        font-size:16px;
-        max-width:500px;
-        margin:0 auto 40px;
-      }
-      
-      .photo-gallery .intro p {
-        margin-bottom:0;
-      }
-      
-      .photo-gallery .photos {
-        padding-bottom:20px;
-      }
-      
-      .photo-gallery .item {
-        padding-bottom:30px;
-      }
-      
-      
+      .carousel-item.active        {
+         background-color:#bbbbbb;
+      border-radius: 0.4em;
+  }
