@@ -5,455 +5,111 @@
 <head>
     <title>Szyfrowanie i Kody - Wprowadzenie</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="cezar.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="icon" href="key.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <div class="all bg-light myborder">
+  
+      <header class="mybg container p-3 justify-content-center d-flex flex-column myborder">
+        <h1 class="display-2 fw-bolder headfont"><span class="content">Szyfry i Kody*</span></h1>
+        <span class="text-end fst-italic fw-bold"><span class="content2">* Zakątek w sieci gdzie zaczerpniesz garść
+            wiedzy na temat
+            popularnych sposobów szyfrowania</span></span>
+      </header>
+  
+  
+  
+      <div class="container myborder">
+  
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand px-5 pb-2" href="#"><img class="img-fluid justify-content-center d-flex d-block" src="navbar.png" alt="Kolorat"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse bold-nav-ft" id="navbarNavDropdown">
+            <ul class="navbar-nav m-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Strona główna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aktualnosci.html">Aktualności</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">Szyfry</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="cezar.html">Szyfr Cezara</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="ramsay.html">Szyfr Hamsaya</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="vernam.html">Szyfr Vernama</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="vigenere.html">Szyfr Vigenère'a</a>
+                  </li>
+  
+                  <li>
+                    <hr class="dropdown-divider m-0 pt-1">
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="hamming.html">Kodowanie<br>Hamminga</a>
+                  </li>
+  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-        <header class="mybg container p-3 justify-content-center d-flex flex-column myborder">
-            <h1 class="display-2 fw-bolder headfont"><span class="content">Szyfry i Kody*</span></h1>
-            <span class="text-end fst-italic fw-bold"><span class="content2">* Zakątek w sieci gdzie zaczerpniesz garść
-                    wiedzy na temat
-                    popularnych sposobów szyfrowania</span></span>
-        </header>
-
-
-
-        <div class="container myborder">
-
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand px-5 pb-2" href="#"><img class="img-fluid justify-content-center d-flex d-block"
-                        src="navbar.png" alt="Kolorat"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse bold-nav-ft" id="navbarNavDropdown">
-                    <ul class="navbar-nav m-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Strona główna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aktualnosci.html">Aktualności</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="galeria.html">Galeria</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Szyfry</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="cezar.html">Szyfr Cezara</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="ramsay.html">Szyfr Hamsaya</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="vernam.html">Szyfr Vernama</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="vigenere.html">Szyfr Vigenère'a</a>
-                                </li>
-
-                                <li>
-                                    <hr class="dropdown-divider m-0 pt-1">
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="hamming.html">Kodowanie<br>Hamminga</a>
-                                </li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="container px-3 myhdr myborder">
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-7">
-                    <h3 class="mt-4 d-flex px-3">Aktualności  &#128071;</h3>
-                    <div class="m-3 pt-2">
-                        <h3 class="mt-1 mb-1 d-flex justify-content pb-1">Ile czasu zajmuje hakerom złamanie
-                            nowoczesnych algorytmów haszujących?</h3>
-                        <h5 class="fst-italic">08/04/2025 13:45</h5>
-                        <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="act01.webp"
-                                alt="TimeToHack"></div>
-                        <details>
-                            <summary>
-                                <p class="pt-3">Podczas gdy hasła pozostają pierwszą linią obrony chroniącą konta
-                                    użytkowników przed
-                                    nieautoryzowanym dostępem, metody tworzenia silnych haseł i ich ochrony nieustannie
-                                    ewoluują. Na przykład zalecenia NIST dotyczące haseł obecnie stawiają długość hasła
-                                    ponad jego złożoność. Jednak haszowanie pozostaje niepodlegające negocjacjom. Nawet
-                                    długie, bezpieczne hasła powinny być haszowane, aby zapobiec ich całkowitemu
-                                    ujawnieniu
-                                    w przypadku naruszenia danych – i nigdy nie powinny być przechowywane w postaci
-                                    zwykłego
-                                    tekstu.
-                                </p>
-                                <span class="fw-bold d-flex  justify-content-end">Przeczytaj cały artykuł
-                                    &#128071;</span>
-                            </summary>
-                            <p>
-                                W tym artykule zbadano, w jaki sposób dzisiejsi cyberprzestępcy próbują łamać haszowane
-                                hasła, zbadano typowe algorytmy haszujące i ich ograniczenia oraz omówiono środki, które
-                                można podjąć, aby chronić swoje haszowane hasła, niezależnie od używanego algorytmu.
-                            </p>
-                            <h5>Nowoczesne techniki łamania haseł</h5>
-                            <p>Złośliwi aktorzy mają do dyspozycji szereg narzędzi i metod łamania haszowanych haseł.
-                                Niektóre z szerzej stosowanych metod obejmują ataki siłowe, ataki słownikowe haseł,
-                                ataki
-                                hybrydowe i ataki maskujące.</p>
-
-                            <h5>Ataki siłowe</h5>
-                            <p>Atak siłowy obejmuje nadmierne, siłowe próby i błędy w celu uzyskania dostępu do konta.
-                                Złośliwi autorzy stosują specjalistyczne narzędzia do systematycznego testowania
-                                wariantów
-                                haseł, aż do odkrycia działającej kombinacji. Choć nieskomplikowane, ataki siłowe są
-                                bardzo
-                                skuteczne przy użyciu oprogramowania do łamania haseł i wydajnego sprzętu komputerowego,
-                                takiego jak procesory graficzne (GPU).</p>
-
-                            <h5>Atak słownikowy haseł</h5>
-                            <p>Jak sama nazwa wskazuje, atak słownikowy haseł systematycznie wyciąga słowa ze słownika,
-                                aby
-                                siłowo łamać hasła, aż do znalezienia działającej kombinacji. Zawartość słownika może
-                                zawierać każde powszechne słowo, określone listy słów i kombinacje słów, a także
-                                pochodne
-                                słów i permutacje ze znakami alfanumerycznymi i niealfanumerycznymi (np. zastąpienie „a”
-                                znakiem „@”). Ataki słownikowe haseł mogą również zawierać wcześniej ujawnione hasła lub
-                                frazy kluczowe ujawnione w naruszeniach danych.</p>
-
-                            <h5>Ataki hybrydowe</h5>
-                            <p>Atak hybrydowy haseł łączy siłę siłową z metodami opartymi na słownikach, aby osiągnąć
-                                lepszą zwinność i skuteczność ataku. Na przykład złośliwy aktor może użyć listy słów
-                                słownikowych powszechnie używanych poświadczeń z technikami, które integrują kombinacje
-                                znaków numerycznych i niealfanumerycznych.</p>
-
-                            <h5>Ataki maskowe</h5>
-                            <p>W niektórych przypadkach złośliwi aktorzy mogą znać określone wzorce haseł lub
-                                parametry/wymagania. Ta wiedza pozwala im stosować ataki maskowe w celu zmniejszenia
-                                liczby
-                                iteracji i prób w ich próbach złamania. Ataki maskowe wykorzystują brutalną siłę do
-                                sprawdzania prób hasła, które pasują do określonego wzorca (np. osiem znaków, zaczynają
-                                się
-                                wielką literą i kończą cyfrą lub znakiem specjalnym).</p>
-
-                            <h5>W jaki sposób algorytmy haszujące chronią przed metodami łamania</h5>
-                            <p>Algorytmy haszujące są podstawą w niezliczonych aplikacjach bezpieczeństwa, od
-                                monitorowania
-                                integralności plików po podpisy cyfrowe i przechowywanie haseł. I chociaż nie jest to
-                                niezawodna metoda bezpieczeństwa, haszowanie jest znacznie lepsze niż przechowywanie
-                                haseł w
-                                postaci zwykłego tekstu. Dzięki haszowanym hasłom możesz mieć pewność, że nawet jeśli
-                                cyberprzestępcy uzyskają dostęp do baz danych haseł, nie będą mogli ich łatwo odczytać
-                                ani
-                                wykorzystać.</p>
-
-                            <p>Z założenia haszowanie znacznie utrudnia atakującemu łamanie haseł, działając jako
-                                krytyczny
-                                środek odstraszający, sprawiając, że łamanie haseł jest tak czasochłonne i
-                                zasobochłonne, że
-                                atakujący prawdopodobnie przeniosą swoją uwagę na łatwiejsze cele.</p>
-
-                            <h5>Czy hakerzy mogą złamać algorytmy haszujące?</h5>
-                            <p>Ponieważ algorytmy haszujące są funkcjami jednokierunkowymi, jedyną metodą złamania haseł
-                                haszujących są techniki siłowe. Cyberprzestępcy wykorzystują specjalny sprzęt, taki jak
-                                procesory graficzne i oprogramowanie do łamania haseł (np. Hashcat, L0phtcrack, John The
-                                Ripper), aby wykonywać ataki siłowe na dużą skalę — zazwyczaj miliony, miliardy lub
-                                kombinacje na raz.</p>
-
-                            <p>Nawet przy użyciu tych wyrafinowanych, specjalnie zaprojektowanych narzędzi do łamania
-                                haseł
-                                czas łamania haseł może się znacznie różnić w zależności od konkretnego użytego
-                                algorytmu
-                                haszującego i kombinacji długości hasła/znaków. Na przykład złamanie długich, złożonych
-                                haseł może zająć tysiące lat, podczas gdy krótkie, proste hasła można złamać
-                                natychmiast.</p>
-                        </details>
-
-                    </div>
-                    <div class="m-3 pt-2">
-                        <h3 class="mt-1 mb-1 d-flex justify-content pb-1">Aby zachować bezpieczeństwo sprzętu, usuń
-                            wskazówki z kodu</h3>
-                        <h5 class="fst-italic">04/03/2025 13:45</h5>
-                        <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="act2.png" alt="TimeToHack">
-                        </div>
-                        <details>
-                            <summary>
-                                <p class="pt-3">Wyobraź sobie, że jesteś szefem kuchni z bardzo poszukiwanym przepisem.
-                                    Zapisujesz swoje ściśle tajne instrukcje w dzienniku, aby mieć pewność, że je
-                                    zapamiętasz, ale ich lokalizacja w książce jest oczywista po zagięciach i
-                                    rozdarciach na krawędziach tej często cytowanej strony.
-                                </p>
-                                <span class="fw-bold d-flex  justify-content-end">Przeczytaj cały artykuł
-                                    &#128071;</span>
-                            </summary>
-                            <p>
-                                Podobnie jak przepisy w książce kucharskiej, instrukcje wykonywania programów są
-                                przechowywane w określonych lokalizacjach w pamięci fizycznej komputera. Standardowa
-                                metoda zabezpieczeń — zwana „randomizacją układu przestrzeni adresowej” (ASLR) —
-                                rozprasza ten cenny kod w różnych miejscach, ale hakerzy mogą teraz znaleźć ich nowe
-                                lokalizacje. Zamiast hakować oprogramowanie bezpośrednio, stosują podejścia zwane
-                                mikroarchitektonicznymi atakami pobocznymi, które wykorzystują sprzęt, identyfikując,
-                                które obszary pamięci są najczęściej używane. Stamtąd mogą użyć kodu do ujawnienia haseł
-                                i wprowadzenia krytycznych zmian administracyjnych w systemie (znanych również jako
-                                ataki ponownego wykorzystania kodu).
-                            </p>
-                            <p>Aby zwiększyć skuteczność ASLR, naukowcy z MIT Computer Science and Artificial
-                                Intelligence Laboratory (CSAIL) znaleźli sposób, aby sprawić, że te ślady znikną. Ich
-                                metoda „Oreo” łagodzi ataki sprzętowe poprzez usuwanie losowych bitów adresów, które
-                                prowadzą do instrukcji programu, zanim zostaną przetłumaczone na lokalizację fizyczną.
-                                Usuwa ślady lokalizacji gadżetów kodu (lub krótkich sekwencji instrukcji dla określonych
-                                zadań), zanim hakerzy będą mogli je znaleźć, skutecznie zwiększając bezpieczeństwo
-                                systemów operacyjnych, takich jak Linux.</p>
-
-                            <p>Oreo ma trzy warstwy, podobnie jak jego smaczny imiennik. Pomiędzy wirtualną przestrzenią
-                                adresową (która służy do odwoływania się do instrukcji programu) a fizyczną przestrzenią
-                                adresową (gdzie znajduje się kod), Oreo dodaje nową „zamaskowaną przestrzeń adresową”.
-                                Przemapowuje ona kod z losowych adresów wirtualnych na stałe lokalizacje, zanim zostanie
-                                wykonany w sprzęcie, co utrudnia hakerom śledzenie oryginalnych lokalizacji programu w
-                                wirtualnej przestrzeni adresowej za pomocą ataków sprzętowych.</p>
-
-                            <p>„Pomysł, aby ustrukturyzować go w trzech warstwach, zrodził się w ciasteczkach Oreo” —
-                                mówi Shixin Song, doktorantka MIT z zakresu elektrotechniki i informatyki (EECS) i
-                                współpracowniczka CSAIL, która jest główną autorką artykułu na temat tej pracy. „Pomyśl
-                                o białym wypełnieniu w środku tego smakołyku — nasza wersja tego jest warstwą, która
-                                zasadniczo zaciera ślady lokalizacji gadżetów, zanim trafią w niepowołane ręce”.</p>
-
-                            <p>Autorka Mengjia Yan, adiunkt EECS na MIT i główna badaczka CSAIL, uważa, że ​​zdolności
-                                maskujące Oreo mogą sprawić, że losowość układu przestrzeni adresowej będzie
-                                bezpieczniejsza i bardziej niezawodna.</p>
-
-                            <p>„ASLR został wdrożony w systemach operacyjnych takich jak Windows i Linux, ale w ciągu
-                                ostatniej dekady jego luki w zabezpieczeniach sprawiły, że prawie przestał działać” —
-                                mówi Yan. „Naszym celem jest przywrócenie tego mechanizmu w nowoczesnych systemach w
-                                celu obrony przed atakami na mikroarchitekturę, dlatego opracowaliśmy mechanizm
-                                współprojektowania oprogramowania i sprzętu, który zapobiega wyciekaniu tajnych
-                                przesunięć, które informują hakerów, gdzie znajdują się gadżety”.</p>
-
-
-                            <p>Badacze CSAIL przedstawią swoje odkrycia dotyczące Oreo na Network and Distributed System
-                                Security Symposium pod koniec tego miesiąca.</p>
-
-                            <p>Song i jej współautorzy ocenili, jak dobrze Oreo może chronić Linuksa, symulując ataki
-                                sprzętowe w gem5, platformie powszechnie używanej do badania architektury komputerowej.
-                                Zespół odkrył, że może zapobiegać mikroarchitektonicznym atakom pobocznym bez
-                                utrudniania działania chronionego oprogramowania.</p>
-
-
-                            <p>Song zauważa, że ​​te eksperymenty pokazują, że Oreo jest lekkim ulepszeniem
-                                bezpieczeństwa dla systemów operacyjnych. „Nasza metoda wprowadza marginalne zmiany
-                                sprzętowe, wymagając jedynie kilku dodatkowych jednostek pamięci masowej do
-                                przechowywania niektórych metadanych” — mówi. „Na szczęście ma również minimalny wpływ
-                                na wydajność oprogramowania”.</p>
-
-                            <p>Podczas gdy Oreo dodaje dodatkowy krok do wykonywania programu poprzez usuwanie
-                                ujawniających fragmentów danych, nie spowalnia aplikacji. Ta wydajność sprawia, że
-                                ​​jest to wartościowe zwiększenie bezpieczeństwa ASLR dla systemów pamięci wirtualnej
-                                opartych na tablicy stron poza Linuksem, takich jak te powszechnie spotykane na głównych
-                                platformach, takich jak Intel, AMD i Arm.</p>
-                        </details>
-                    </div>
-                    <div class="m-3 pt-2">
-                        <h3 class="mt-1 mb-1 d-flex justify-content pb-1">NIST publikuje pierwsze 3 sfinalizowane
-                            standardy szyfrowania post-kwantowego</h3>
-                        <h5 class="fst-italic">04/02/2024 13:45</h5>
-                        <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="akt03.jpg"
-                                alt="postquantum"></div>
-                        <ul class="pt-3">
-                            <li>NIST wydał ostateczny zestaw narzędzi szyfrujących zaprojektowanych tak, aby wytrzymać
-                                atak komputera kwantowego.</li>
-                            <li>Te standardy szyfrowania postkwantowego zabezpieczają szeroki zakres informacji
-                                elektronicznych, od poufnych wiadomości e-mail po transakcje e-commerce, które napędzają
-                                nowoczesną gospodarkę.</li>
-                            <li>NIST zachęca administratorów systemów komputerowych do rozpoczęcia przechodzenia na nowe
-                                standardy tak szybko, jak to możliwe.</li>
-                        </ul>
-                        <details>
-                            <summary>
-                                <p>GAITHERSBURG, Md. — Narodowy Instytut Standardów i Technologii (NIST) Departamentu
-                                    Handlu Stanów Zjednoczonych sfinalizował swój główny zestaw algorytmów szyfrowania
-                                    zaprojektowanych tak, aby wytrzymać cyberataki z komputera kwantowego.</p>
-                                <span class="fw-bold d-flex  justify-content-end">Przeczytaj cały artykuł
-                                    &#128071;</span>
-                            </summary>
-                            <p>Naukowcy na całym świecie ścigają się, aby zbudować komputery kwantowe, które działałyby
-                                w radykalnie inny sposób niż zwykłe komputery i mogłyby złamać obecne szyfrowanie, które
-                                zapewnia bezpieczeństwo i prywatność niemal wszystkiego, co robimy w Internecie.
-                                Algorytmy ogłoszone dzisiaj zostały określone w pierwszych ukończonych standardach z
-                                projektu standaryzacji kryptografii postkwantowej (PQC) NIST i są gotowe do
-                                natychmiastowego użycia.</p>
-                            <p>Trzy nowe standardy zostały stworzone z myślą o przyszłości. Technologia komputerów
-                                kwantowych rozwija się szybko, a niektórzy eksperci przewidują, że urządzenie zdolne do
-                                złamania obecnych metod szyfrowania może pojawić się w ciągu dekady, zagrażając
-                                bezpieczeństwu i prywatności osób, organizacji i całych narodów.</p>
-                            <p>„Postęp obliczeń kwantowych odgrywa zasadniczą rolę w potwierdzaniu statusu Ameryki jako
-                                globalnej potęgi technologicznej i napędza przyszłość naszego bezpieczeństwa
-                                gospodarczego” — powiedział zastępca sekretarza handlu Don Graves. „Biura handlowe
-                                dokładają wszelkich starań, aby zapewnić konkurencyjność Stanów Zjednoczonych w
-                                dziedzinie kwantowej, w tym Narodowy Instytut Norm i Technologii, który stoi na czele
-                                tego ogólnorządowego wysiłku. NIST zapewnia nieocenioną wiedzę specjalistyczną w celu
-                                opracowania innowacyjnych rozwiązań naszych wyzwań kwantowych, w tym środków
-                                bezpieczeństwa, takich jak kryptografia postkwantowa, które organizacje mogą zacząć
-                                wdrażać, aby zabezpieczyć naszą postkwantową przyszłość. W miarę trwania tego trwającego
-                                dekadę przedsięwzięcia z niecierpliwością oczekujemy kontynuacji dziedzictwa wiodącej
-                                roli Commerce w tej ważnej przestrzeni”.</p>
-                            <p>Standardy — zawierające kod komputerowy algorytmów szyfrujących, instrukcje dotyczące
-                                sposobu ich wdrażania i ich zamierzonego zastosowania — są wynikiem ośmioletniego
-                                wysiłku zarządzanego przez NIST, który ma długą historię rozwijania szyfrowania. Agencja
-                                zmobilizowała światowych ekspertów kryptografii, aby wymyślili, zgłosili, a następnie
-                                ocenili algorytmy kryptograficzne, które mogłyby oprzeć się atakowi komputerów
-                                kwantowych. Ta rodząca się technologia może zrewolucjonizować dziedziny od prognozowania
-                                pogody po fizykę fundamentalną i projektowanie leków, ale niesie ze sobą również
-                                zagrożenia.</p>
-                            <p>„Technologia obliczeń kwantowych może stać się siłą napędową rozwiązywania wielu
-                                najtrudniejszych problemów społecznych, a nowe standardy odzwierciedlają zobowiązanie
-                                NIST do zapewnienia, że ​​nie zakłóci ona jednocześnie naszego bezpieczeństwa” —
-                                powiedziała Podsekretarz Handlu ds. Standardów i Technologii oraz Dyrektor NIST Laurie
-                                E. Locascio. „Te sfinalizowane standardy są zwieńczeniem wysiłków NIST na rzecz ochrony
-                                naszych poufnych informacji elektronicznych”.</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-5 px-5 bg-light">
-
-                    <div class="mb-3 pt-2"><img class="img-fluid d-block img-thumbnail" src="history.jpeg"
-                            alt="History"></div>
-                    <h3 class="mb-3 mt-4 d-flex justify-content">Kalendarium &#128071;</h3>
-
-                        <table class="table table-striped-columns" style="width:100%">
-                            <tr>
-                                <th>Data</th>
-                                <th>Wydarzenie</th>
-                            </tr>
-                            <tr>
-                                <td>~1900r. p.n.e.</td>
-                                <td>Najstarszy znany przykład szyfrowania wiadomości znaleziono w grobowcu egipskiego
-                                    szlachcica (a dokładniej Nomarch - wysoki egipski urzędnik) Khnumhotep II</td>
-                            </tr>
-                            <tr>
-                                <td>~1500r. p.n.e.</td>
-                                <td>najstarszy znany ludzkości przykład kryptografii, która została wykorzystywana do
-                                    ochrony wrażliwych informacji miał miejsce w Mezopotamii. W tamtym czasie jeden z
-                                    pisarzy stosował metody kryptograficzne, aby ukryć formułę szkliwa garncarskiego,
-                                    która była używana na glinianych tabliczkach.</td>
-                            </tr>
-                            <tr>
-                                <td>V w. p.n.e.</td>
-                                <td>Grek Dermatos ostrzegł Spartan przed ofensywą Persów wyrywając tekst w drewnie i
-                                    pokrywając tabliczkę woskiem</td>
-                            </tr>
-                            <tr>
-                                <td>V w. p.n.e.</td>
-                                <td>
-                                    <div class="mb-2"><img class="img-fluid d-block img-thumbnail" style="width:75%" src="Skytale.png"
-                                            alt="Enigma">
-                                    </div>Sparta - pierwsze urządzenie szyfrujące o nazwie Scytale. Z języka greckiego
-                                    nazwa ta oznacza „pałeczki” – z reguły były one wykonane z drewna i miały kształt
-                                    ośmiokąta lub dziesięciokąta.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>IV w. p.n.e.</td>
-                                <td>Drugim szerzej znanym ludzkości szyfrem, licząc chronologicznie od czasów
-                                    najdawniejszych był Atbasz – szyfr podstawieniowy pochodzenia hebrajskiego
-                                    opracowany prawdopodobnie ok. 500 lat p.n.e. Sposób jego użycia opierał się na
-                                    zasadzie wymiany liter z początku i końca alfabetu w dokładnej kolejności ich
-                                    występowania.</td>
-                            </tr>
-                            <tr>
-                                <td>II w. p.n.e.</td>
-                                <td>Grecki historyk Polibiusz opracował system szyfrowania oparty na tablicy
-                                    przyporządkowującej każdej literze parę cyfr.</td>
-                            </tr>
-                            <tr>
-                                <td>58 r. p.n.e.</td>
-                                <td>Pierwszy dobrze znany szyfr, substytucyjny, był używany przez Juliusza Cezara.</td>
-                            </tr>
-                            <tr>
-                                <td>IX w. n.e.</td>
-                                <td>Najwcześniejsze prace Al-Kindiego, „filozof Arabów", który napisał traktat „O
-                                    odczytywaniu zaszyfrowanych listów”. Analiza częstości po dziś dzień stanowi
-                                    podstawową technikę kryptoanalityczną!</td>
-                            </tr>
-                            <tr>
-                                <td>1465 r.</td>
-                                <td>Leon Alberti wynalazł szyfr polialfabetyczny. Szyfry polialfabetyczne to połączenie
-                                    wielu szyfrów monoalfabetycznych stosujących wiele tajnych alfabetów do szyfrowania
-                                    kolejnych znaków w tekście.</td>
-                            </tr>
-                            <tr>
-                                <td>1518 r.</td>
-                                <td>Pierwsza książka na temat kryptologii wydana drukiem. Jej tytu brzmia: Sześć ksiąg o poligrafii przez Johannesa Trithemiusa, opata w Wurzburgu, poprzednio w Spanheim, dla cesarza Maksymiliana. </td>
-                            </tr>
-                            <tr>
-                                <td>1553 r.</td>
-                                <td>Szyfr, który obecnie nazywamy szyfrem Vigenère’a, po raz pierwszy został opisany przez Giovana Batista Belaso, w broszurze zatytułowanej La cifra del. Sig. Giovan Batista Belaso</td>
-                            </tr>
-                            <tr>
-                                <td>1623 r.</td>
-                                <td>Kodowanie binarne wymyślone przez znanego wtedy filozofa Sir Francisa Bacona. Metoda
-                                    ta jednak polegała na ukrywaniu przekazu wiadomość aniżeli jej faktycznego
-                                    szyfrowania.</td>
-                            </tr>
-                            <tr>
-                                <td>1790 r.</td>
-                                <td>Wynalazek Thomasa Jeffersona bliżej nam znany jako koło szyfrujące składał się z 36
-                                    literowych pierścieni osadzonych na ruchomych kółkach. Wynalazek pozwalał na
-                                    tworzenie bardzo złożonych szyfrów. Koncepcja ta była tak zaawansowana, że stanowiła
-                                    podstawę amerykańskiej kryptografii wojskowej aż do drugiej wojny światowej.</td>
-                            </tr>
-                            <tr>
-                                <td>1917 r.</td>
-                                <td>Szyfr zaproponowany przez Gilberta Vernama, którego, przy poprawnym wykorzystaniu,
-                                    nie można złamać. Szyfr z kluczem jednorazowym jest dużym zbiorem o niepowtarzalnych
-                                    i przypadkowych sekwencjach znaków. W pierwotnej postaci była to jednorazowa taśma
-                                    perforowana do dalekopisu.</td>
-                            </tr>
-                            <tr>
-                                <td>1918 r.</td>
-                                <td>Szyfr ADFGVX – prosty szyfr podstawieniowy używany przez wojska niemieckie w czasie pierwszej wojny światowej[1] do komunikacji na polu bitwy.</td>
-                            </tr>
-                            <tr>
-                                <td>1918 r.</td>
-                                <td>Arthur Scherbius patentuje maszynę szyfrującą Enigma.</td>
-                            </tr>
-                            <tr>
-                                <td>1932 r.</td>
-                                <td>W październiku Maksymilian Ciężki powierza Marianowi Rejewskiemu zadanie ataku na szyfr Enigmy. W grudniu Marian Rejewski dokonuje rekonstrukcji maszyny i łamie pierwsze depesze szyfrowane Enigmą.</td>
-                            </tr>
-                            <tr>
-                                <td>1938 r.</td>
-                                <td>Bomba kryptologiczna, bomba Rejewskiego – urządzenie mechaniczno-elektryczne skonstruowane przez polskich kryptologów: Mariana Rejewskiego, Jerzego Różyckiego i Henryka Zygalskiego w celu automatycznego łamania szyfrogramów niemieckiej maszyny szyfrującej Enigma</td>
-                            </tr>
-                            <tr>
-                                <td>1943 r.</td>
-                                <td>Seria programowalnych maszyn cyfrowych oparta na teoretycznych podstawach prac Alana Turinga.</td>
-                            </tr>
-                        </table>
-                </div>
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Lightbox Gallery</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh
+                    erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar01.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar01.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar02.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar02.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar03.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar03.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar01.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar01.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar02.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar02.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="cezar03.jpg" data-lightbox="photos"><img
+                            class="img-fluid" src="cezar03.jpg"></a></div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class=" container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center myborder">
-            <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174;</p>
-        </div>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
+
+<footer>
+    <div class=" container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center myborder">
+        <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174;</p>
+    </div>
+</footer>
+
 
 </html>
