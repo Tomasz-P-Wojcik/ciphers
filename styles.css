@@ -68,21 +68,21 @@ h6 {
 
 .navbar-nav > .nav-item {
     min-width: 155px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
-    border-color: darkgray;
+    border-color:black;
     border-radius: 0.7em;
     margin-right:  1em;
     padding: 0.4em;
     
     color: black;
-    background-color:lightgray;
+    background-color:goldenrod;
     text-align: center;
     padding: 0.2em;
 }
 
 .navbar-nav > .nav-item:hover {
-    background-color:whitesmoke;
+    background-color:gold;
 }
 
 .navbar-nav > .nav-item > .nav-link {
@@ -90,11 +90,11 @@ h6 {
 }
 
 .dropdown-menu {
-        border-width: 1px;
+        border-width: 2px;
         border-style: solid;
-        border-color: darkgray;
+        border-color :black;
         border-radius: 0.5em;
-        background-color:azure;
+        background-color:goldenrod;
         padding: 0.4em;
         
     }
@@ -102,19 +102,19 @@ h6 {
     .dropdown-menu > .nav-item> .dropdown-item {
         font-weight: bold;
         border-radius: 0.5em;
-        border-width: 1px;
+        border-width: 2px;
         border-style: solid;
         margin-bottom: 2px;
-        border-color:darkgray;
-        background-color:lightgray;
+        border-color: goldenrod;
+        background-color:goldenrod;
     }
 
     .dropdown-menu > .nav-item> .dropdown-item:hover {
         border-radius: 0.5em;
-        border-width: 1px;
+        border-width: 2px;
         border-style: solid;
-        border-color: darkgray;
-        background-color:whitesmoke;
+        border-color: goldenrod;
+        background-color:gold;
         
     }
 
@@ -151,7 +151,7 @@ h6 {
     }
 
     .active {
-        background-color:#aaa;
+        background-color:gold;
         border-radius: 0.4em;
     }
 
