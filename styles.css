@@ -172,7 +172,7 @@ h6 {
         box-shadow: 1px 1px 2px #bbbbbb;
       }
 
-      .carousel-item.active        {
-         background-color:#bbbbbb;
-      border-radius: 0.4em;
+      .carousel-item , .carousel-inner , .carousel   {
+         background-color:lightgray;
+         border-radius: 0.4em;
   }
