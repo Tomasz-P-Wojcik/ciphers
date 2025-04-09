@@ -177,6 +177,11 @@ h6 {
          border-radius: 0.4em;
   }
 
+  .carousel-item > p > img   {
+    background-color:lightgray;
+    border-radius: 0.4em;
+}
+
   .iconborder {
     border-color:white;
     border-style: solid;
@@ -184,4 +189,28 @@ h6 {
     border-radius: 20%;
     background-color: black;
     
+  }
+
+  #thumb_gal > div > a > img {
+    border-color:white;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 5%;
+  }
+
+  #thumb_gal > div > a > img:hover {
+    border-color:black;
+  }
+
+  #thumb_gal > div {
+    padding-bottom: 0.3em;
+  }
+
+  #thumb_gal > div {
+
+    padding: 0.2em;
+  }
+
+  .card {
+    max-width: 30%;
   }
