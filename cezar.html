@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Szyfrowanie i Kody - Aktualności</title>
+    <title>Szyfrowanie i Kody - SZyfr Cezara</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@
             </nav>
         </div>
 
-        <div class="container px-3 myhdr myborder">
+        <div class="container px-2 myhdr myborder">
             <div class="row">
-                <div class="col-md-6 col-12 p-2">
+                <div class="col-md-6 col-12 p-5">
                     <h2 class="display-6 ">SZYFR CEZARA</h2>
 
                     <h3>Opis</h3>
@@ -93,9 +93,9 @@
                         występującą w
                         alfabecie
                         trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego
-                        <br /><br />
+                        <hr>
 
-                        <i>abcdefghijklmnopqrstuvwxyz</i><br /><br />
+                        <i>abcdefghijklmnopqrstuvwxyz</i><hr>
 
                         to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
                         <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
@@ -104,47 +104,47 @@
                         <i>a</i> itd.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 p-2">
+                <div class="col-md-6 col-12 p-5 codediv">
                     <h2 class="display-6">KODER/DEKODER</h2>
+                    <h4>Instrukcja:</h4>
+                    <p>
+                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod" możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
+                        <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
+                        <hr>
+
                     <h3>Formularz używający szyfru Cezara</h3>
 
-                    <div class="container">
-                        <div class="jumbotron">
-                            <form>
-                                <div class="form-group pt-3">
-                                    <Span class="container">
-                                        <p>Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                            onkeyup="drukuj()">
-                                    </Span>
 
-                                    <Span class="container">
-                                        <p>Kod:</p><input id="kod" type="text" name="kod" value="1" onkeyup="drukuj()">
-                                    </Span>
 
-                            </form>
+                   
+
+                        <div class="iodata mt-4">
+                            <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
+                                onkeyup="drukuj()">
+
+                            <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
+                                onkeyup="drukuj()">
                         </div>
+                        <div class="result mt-5">
+                            <p class="fw-bold">Tekst kodowany:</p>
+                            <output id="kodowany" type="text" value=" "></output>
 
-                        <div class="container">
-                            <span>
-                                <p>Tekst kodowany:</p><span id="kodowany"> </span>
+                            <p class="fw-bold pt-2">Tekst dekodowany:</p>
+                            <output id="dekodowany" type="text" value=" "></output>
                         </div>
+                    
 
-                        <div class="container">
-                            <span>
-                                <p>Tekst dekodowany:</p><span id="dekodowany"></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-        <footer class="all">
-            <div class="container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center myborder">
-                <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174;</p>
-            </div>
-        </footer>
+    <footer class="all">
+        <div class="container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center myborder">
+            <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174;</p>
+        </div>
+    </footer>
 </body>
 
 </html>

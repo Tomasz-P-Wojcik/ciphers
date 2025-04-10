@@ -205,3 +205,35 @@ details>p {
 #thumb_gal {
   border-radius: 0.5em;
 }
+
+.codediv {
+  background-color:whitesmoke;
+  border-radius: 0.4em;
+}
+
+output {
+  background-color:white;
+  border-radius: 0.2em;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 0.1em;
+  min-width: 186px;
+  height: 30px;
+
+}
+
+ .result, .iodata {
+  background-color:bisque;
+  border-radius: 0.2em;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 0.1em;
+  max-width:fit-content;
+  padding: 1em;
+
+ }
+
+ .result {
+  background-color:lightgreen;
