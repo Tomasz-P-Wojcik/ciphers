@@ -1,11 +1,11 @@
-function drukuj() {
+﻿function drukuj() {
     document.getElementById('kodowany').innerHTML= SzyfrCezara(document.getElementById('haslo').value,document.getElementById('kod').value) ;
     document.getElementById('dekodowany').innerHTML= SzyfrCezara(document.getElementById('haslo').value,-(document.getElementById('kod').value)) ;
     
     }
     function SzyfrCezara(TekstWejsciowy, liczba) {
     var MałeLitery = TekstWejsciowy.toLowerCase();
-    var alfabet ="aąbcćdeęfghijklłmnńoóprsśtuwyzźż".split('');
+    var alfabet ="abcdefghijklmnopqrstuwyz".split('');
     liczba = liczba % alfabet.length;
     var TekstWyjsciowy = "";
     for(var i=0; i<MałeLitery.length; i++) {
