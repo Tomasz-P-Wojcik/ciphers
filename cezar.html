@@ -78,83 +78,86 @@
                 </div>
             </nav>
         </div>
+
         <div class="container px-3 myhdr">
             <div class="row">
-                <div class="col-sm-8 col-lg-6 px-5 bg-light">
+                <div class="col-sm-8 col-lg-6 px-5 bg-light d-flex justify-content-center">
 
-                        <h2 class="text-center">SZYFR CEZARA</h2>
+                    <h2 class="text-center">SZYFR CEZARA</h2>
 
-                        <section>
-                            <h2>Opis</h2>
-                            <p>
-                                Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował swoją
-                                korespondencję
-                                z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę występującą w
-                                alfabecie
-                                trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego <br /><br />
-        
-                                <i>abcdefghijklmnopqrstuvwxyz</i><br /><br />
-        
-                                to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
-                                <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
-                                Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie litera
-                                <i>a</i> itd.
-                            </p>
-                        </section>
-        
-                        <section class="bg-light">
-                            <h2 class="mt-5">KODER/DEKODER</h2>
-                            <h5>Formularz używający szyfru Cezara</h5>
+                        <h2>Opis</h2>
+                        <p>
+                            Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował swoją
+                            korespondencję
+                            z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę występującą w
+                            alfabecie
+                            trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego <br /><br />
+
+                            <i>abcdefghijklmnopqrstuvwxyz</i><br /><br />
+
+                            to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
+                            <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
+                            Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie litera
+                            <i>a</i> itd.
+                        </p>
+                    
+
+                    <div class="bg-light">
+                        <h2 class="mt-5">KODER/DEKODER</h2>
+                        <h5>Formularz używający szyfru Cezara</h5>
+                        <div class="container">
+                            <div class="jumbotron">
+                                <form>
+                                    <div class="form-group pt-3">
+                                        <Span class="container">
+                                            <p>Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
+                                                onkeyup="drukuj()">
+                                        </Span>
+
+                                        <Span class="container">
+                                            <p>Kod:</p><input id="kod" type="text" name="kod" value="1"
+                                                onkeyup="drukuj()">
+                                        </Span>
+
+                                </form>
+                            </div>
+
                             <div class="container">
-                                <div class="jumbotron">
-                                    <form>
-                                        <div class="form-group pt-3">
-                                            <Span class="container">
-                                                <p>Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                                    onkeyup="drukuj()">
-                                            </Span>
-        
-                                            <Span class="container">
-                                                <p>Kod:</p><input id="kod" type="text" name="kod" value="1" onkeyup="drukuj()">
-                                            </Span>
-        
-                                    </form>
-                                </div>
-        
-                                <div class="container">
-                                    <span>
-                                        <p>Tekst kodowany:</p><span id="kodowany"> </span>
-                                </div>
-        
-                                <div class="container">
-                                    <span>
-                                        <p>Tekst dekodowany:</p><span id="dekodowany"></span>
-                                </div>
+                                <span>
+                                    <p>Tekst kodowany:</p><span id="kodowany"> </span>
+                            </div>
+
+                            <div class="container">
+                                <span>
+                                    <p>Tekst dekodowany:</p><span id="dekodowany"></span>
                             </div>
                         </div>
-        
-                    </div>
+                    </div> 
                 </div>
-                <div class="col-sm-6 col-lg-4">
-                    <h5 class="mt-4 d-flex px-3">Słynne urządzenia szyfrujące &#128071;</h5>
-                    <div class="m-3 pt-2">
-                      <h2 class="mt-1 mb-1 d-flex justify-content pb-1">ENIGMA 1</h2>
-                      <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="enigma.jpg" alt="Enigma"></div>
-                      <p>Enigma (z gr. αινιγμα „zagadka”) - Trzywirnikowa maszyna szyfrująca z rdzeniem elektrycznym. Jej
-                        kluczowym elementem była złożona, wymienna seria trzech wirników z 26-znakowym alfabetem, reflektorem i
-                        tablicą wtykową z ruchomymi przewodami łączącymi, które łączyły pary liter.</p>
-                      <p>Dodatkowym zabezpieczeniem była zmiana co
-                        24 godziny podstawowych lub początkowych ustawień wirników, zgodnie z wydrukowanymi wcześniej rejestrami
-                        ustawień, dostarczanymi z wyprzedzeniem lub codziennie przez kuriera.</p>
-                    </div>
-        
+
+                <div class="col-sm-4 col-lg-6 d-flex justify-content-center">
+                    <h5 class="mt-4 px-3">Słynne urządzenia szyfrujące &#128071;</h5>
+                    <div class="m-3 pt-2 d-flex">
+                        <h2 class="mt-1 mb-1 justify-content pb-1">ENIGMA 1</h2>
+                        <div class="mb-2"><img class="img-fluid d-block img-thumbnail" src="enigma.jpg" alt="Enigma">
+                        </div>
+                        <p>Enigma (z gr. αινιγμα „zagadka”) - Trzywirnikowa maszyna szyfrująca z rdzeniem elektrycznym.
+                            Jej
+                            kluczowym elementem była złożona, wymienna seria trzech wirników z 26-znakowym alfabetem,
+                            reflektorem i
+                            tablicą wtykową z ruchomymi przewodami łączącymi, które łączyły pary liter.</p>
+                        <p>Dodatkowym zabezpieczeniem była zmiana co
+                            24 godziny podstawowych lub początkowych ustawień wirników, zgodnie z wydrukowanymi
+                            wcześniej
+                            rejestrami
+                            ustawień, dostarczanymi z wyprzedzeniem lub codziennie przez kuriera.</p>
                     </div>
 
-                  </div>
-
+                </div>
             </div>
         </div>
     </div>
+
     <footer class="all">
         <div class=" container col-sm-12 p-3 bg-dark text-white text-center d-flex justify-content-center myborder">
             <p class="d-flex justify-content-center">Tomasz Wójcik - UKEN 2025&#174;</p>
@@ -163,4 +166,3 @@
 </body>
 
 </html>
-
