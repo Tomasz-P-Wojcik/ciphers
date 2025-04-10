@@ -1,216 +1,212 @@
 .mojobraz {
-    height: 200px;
-    background: #aaa;
+  height: 200px;
+  background: #aaa;
 }
 
 .all {
-    background-image: url("mainbg.jpg");
+  background-image: url("mainbg.jpg");
 }
 
 
 .myhdr {
-    background-color:lightgray; 
+  background-color: lightgray;
 }
 
 .mybg {
-    background-image: url("mainbg_manuscript.jpg");
+  background-image: url("mainbg_manuscript.jpg");
 }
 
 
 h1 {
-    font-size: xx-large;
-    text-align: center;
+  font-size: xx-large;
+  text-align: center;
 }
 
 h6 {
-    font-size: small;
-    text-align: center;
+  font-size: small;
+  text-align: center;
 }
 
 .bold-nav-ft {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .hide {
-    display: none;
-  }
-      
-  .spanhov:hover + .hide  {
-    display: block;
-  }
+  display: none;
+}
 
-  .spanhov:hover {
-    display: none;
-  }
+.spanhov:hover+.hide {
+  display: block;
+}
 
-  .headfont {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.spanhov:hover {
+  display: none;
+}
 
-  }
+.headfont {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
-  .content {
-    background-color: rgb(204, 204, 204); 
-    background-color: rgba(204, 204, 204, 0.5);
-    padding: 0.12em;
-    border-radius: 1em;
+.content {
+  background-color: rgb(204, 204, 204);
+  background-color: rgba(204, 204, 204, 0.5);
+  padding: 0.12em;
+  border-radius: 1em;
 }
 
 .content2 {
-    background-color: rgb(204, 204, 204); 
-    background-color: rgba(204, 204, 204, 0.75);
-    padding: 0.3em;
-    border-radius: 1em;
+  background-color: rgb(204, 204, 204);
+  background-color: rgba(204, 204, 204, 0.75);
+  padding: 0.3em;
+  border-radius: 1em;
 }
 
 .myborder {
-    border-radius: 0.3em;
+  border-radius: 0.3em;
 }
 
-.navbar-nav > .nav-item {
-    min-width: 155px;
-    border-width: 2px;
-    border-style: solid;
-    border-color:black;
-    border-radius: 0.7em;
-    margin-right:  1em;
-    padding: 0.4em;
-    
-    color: black;
-    background-color:gold;
-    text-align: center;
-    padding: 0.2em;
+.navbar-nav>.nav-item {
+  min-width: 155px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0.7em;
+  margin-right: 1em;
+  padding: 0.4em;
+
+  color: black;
+  background-color: gold;
+  text-align: center;
+  padding: 0.2em;
 }
 
-.navbar-nav > .nav-item:hover {
-    background-color:goldenrod;
+.navbar-nav>.nav-item:hover {
+  background-color: goldenrod;
 }
 
-.navbar-nav > .nav-item > .nav-link {
-    color: black;
+.navbar-nav>.nav-item>.nav-link {
+  color: black;
 }
 
 .dropdown-menu {
-        border-width: 2px;
-        border-style: solid;
-        border-color :black;
-        border-radius: 0.5em;
-        background-color:gold;
-        padding: 0.4em;
-        
-    }
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0.5em;
+  background-color: gold;
+  padding: 0.4em;
 
-    .dropdown-menu > .nav-item> .dropdown-item {
-        font-weight: bold;
-        border-radius: 0.5em;
-        border-width: 2px;
-        border-style: solid;
-        margin-bottom: 2px;
-        border-color: gold;
-        background-color:gold;
-    }
-
-    .dropdown-menu > .nav-item> .dropdown-item:hover {
-        border-radius: 0.5em;
-        border-width: 2px;
-        border-style: solid;
-        border-color: gold;
-        background-color:goldenrod;
-        
-    }
-
-    .nav > .nav-item> .nav-link{
-        
-        border-width: 1px;
-        border-style: solid;
-        border-color:darkgray;
-        color: blue;
-        background-color:gainsboro;
-        text-align: right;
-        text-wrap:initial;
-
-    }
-
-    .nav > .nav-item> .nav-link:hover {
-        
-        background-color:whitesmoke;
-        color:darkblue;
-        font-weight: bold;
-
-    }
-
-    .nav > .nav-item > .nav-link::before{
-        
-        padding-right: 5px;
-        content: " ⇒ ";
-
-    }
-
-    .col-sm-4 > div > div {
-        padding-bottom: 0.5em;
-
-    }
-
-    .active {
-        background-color:goldenrod;
-        border-radius: 0.4em;
-    }
-
-
-    details > summary {
-        display: block;
-        padding: 4px;
-        background-color: #eeeeee;
-        border: none;
-        box-shadow: 1px 1px 2px #bbbbbb;
-        cursor: pointer;
-      }
-      
-      details > p {
-        background-color: #eeeeee;
-        padding: 4px;
-        margin: 0;
-        box-shadow: 1px 1px 2px #bbbbbb;
-      }
-
-      .carousel-item , .carousel-inner , .carousel   {
-         background-color:lightgray;
-         border-radius: 0.4em;
-  }
-
-  .carousel-item > p > img   {
-    background-color:lightgray;
-    border-radius: 0.4em;
 }
 
-  .iconborder {
-    border-color:white;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20%;
-    background-color: black;
-    
-  }
+.dropdown-menu>.nav-item>.dropdown-item {
+  font-weight: bold;
+  border-radius: 0.5em;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 2px;
+  border-color: gold;
+  background-color: gold;
+}
 
-  #thumb_gal > div > a > img {
-    border-color:white;
-    border-style: solid;
-    border-width: 0.2em;
-    border-radius: 5%;
-  }
+.dropdown-menu>.nav-item>.dropdown-item:hover {
+  border-radius: 0.5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gold;
+  background-color: goldenrod;
 
-  #thumb_gal > div > a > img:hover {
-    border-color:black;
-  }
+}
 
-  #thumb_gal > div {
-    padding-bottom: 0.3em;
-  }
+.nav>.nav-item>.nav-link {
 
-  #thumb_gal > div {
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgray;
+  color: blue;
+  background-color: gainsboro;
+  text-align: right;
+  text-wrap: initial;
 
-    padding: 0.2em;
-  }
+}
 
-  .card {
-    max-width: 30%;
-  }
+.nav>.nav-item>.nav-link:hover {
+
+  background-color: whitesmoke;
+  color: darkblue;
+  font-weight: bold;
+
+}
+
+.nav>.nav-item>.nav-link::before {
+
+  padding-right: 5px;
+  content: " ⇒ ";
+
+}
+
+.col-sm-4>div>div {
+  padding-bottom: 0.5em;
+
+}
+
+.active {
+  background-color: goldenrod;
+  border-radius: 0.4em;
+}
+
+
+details>summary {
+  display: block;
+  padding: 4px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details>p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+.carousel-item,
+.carousel-inner {
+  background-color: lightgray;
+  border-radius: 0.4em;
+}
+
+.carousel-item>p>img {
+  background-color: lightgray;
+  border-radius: 0.4em;
+}
+
+.iconborder {
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.5em;
+  background-color: black;
+
+}
+
+#thumb_gal>div>a>img {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.2em;
+  border-radius: 0.5em;
+}
+
+#thumb_gal>div>a>img:hover {
+  border-color: black;
+}
+
+#thumb_gal>div {
+  padding: 0.2em;
+  padding-bottom: 0.3em;
+}
+
+#thumb_gal {
+  border-radius: 0.5em;
+}
