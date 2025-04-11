@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="scripts/cezar.js"></script>
+    <script src="scripts/cezar.js"></script>
     <link rel="icon" href="key.ico" type="image/x-icon">
 </head>
 
@@ -87,24 +87,20 @@
                     <h3>Opis</h3>
                     <p>
                         Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował
-                        swoją
-                        korespondencję
-                        z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę
-                        występującą w
-                        alfabecie
-                        trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego
-                        <hr>
-
-                        <i>abcdefghijklmnopqrstuvwxyz</i><hr>
-
-                        to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
-                        <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
-                        Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie
-                        litera
-                        <i>a</i> itd.
+                        swoją korespondencję z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał
+                        literę
+                        występującą w alfabecietrzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu
+                        łacińskiego
+                        <hr><i>abcdefghijklmnopqrstuvwxyz</i>
+                        <hr>to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
+                        <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>. Alfabet traktujemy cyklicznie, tzn. po ostatniej
+                        literze <i>z</i> następuje ponownie
+                        litera <i>a</i> itd.
                     </p>
                     <p>
-                        Każda litera tekstu jawnego jest zastępowana inną literą, która jest od niej oddalona o stałą liczbę pozycji w alfabecie. Jeśli algorytm wskazywałby na pozycję, która wychodzi poza ostatnią literę w alfabecie, to przechodzi się na początek alfabetu. Poniżej schemat.
+                        Każda litera tekstu jawnego jest zastępowana inną literą, która jest od niej oddalona o stałą
+                        liczbę pozycji w alfabecie. Jeśli algorytm wskazywałby na pozycję, która wychodzi poza ostatnią
+                        literę w alfabecie, to przechodzi się na początek alfabetu. Poniżej schemat.
                     </p>
                     <img class="img-fluid d-block img-thumbnail" src="images/cezar02.jpg" alt="Cezar Schemat">
                 </div>
@@ -112,28 +108,28 @@
                     <h2 class="display-6">KODER/DEKODER</h2>
                     <h4>Instrukcja:</h4>
                     <p>
-                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod" możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
-                        <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
-                        <hr>
+                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod"
+                        możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
+                    <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji
+                        odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
+                    <hr>
 
                     <h3>Formularz używający szyfru Cezara</h3>
 
-                        <div class="iodata mt-4">
-                            <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                onkeyup="drukuj()">
+                    <div class="iodata mt-4">
+                        <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
+                            onkeyup="drukuj()">
 
-                            <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
-                                onkeyup="drukuj()">
-                        </div>
-                        <div class="result mt-5">
-                            <p class="fw-bold">Tekst kodowany:</p>
-                            <output id="kodowany" type="text" value=" "></output>
+                        <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
+                            onkeyup="drukuj()">
+                    </div>
+                    <div class="result mt-5">
+                        <p class="fw-bold">Tekst kodowany:</p>
+                        <output id="kodowany" type="text" value=" "></output>
 
-                            <p class="fw-bold pt-2">Tekst dekodowany:</p>
-                            <output id="dekodowany" type="text" value=" "></output>
-                        </div>
-                    
-
+                        <p class="fw-bold pt-2">Tekst dekodowany:</p>
+                        <output id="dekodowany" type="text" value=" "></output>
+                    </div>
                 </div>
             </div>
         </div>
