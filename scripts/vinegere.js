@@ -46,7 +46,7 @@ $(document).ready(function(){
     var keyword = $("#keyword");
 
     if(plainMsg.val() == "" || keyword.val() == "" ){
-      alert("Please type both secret message and keyword!");
+      alert("Wprowadz wiadomosc i kod szyfrujący!");
     }else{
       plainMsg.val(encrypt(plainMsg.val(), keyword.val()));
     }

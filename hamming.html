@@ -30,7 +30,7 @@
 
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand px-5 pb-2" href="#"><img class="img-fluid justify-content-center d-flex d-block"
-                        src="navbar.png" alt="Kolorat"></a>
+                        src="images\navbar.png" alt="Kolorat"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -86,53 +86,61 @@
 
                     <h3>Opis</h3>
                     <p>
-                        Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował
-                        swoją
-                        korespondencję
-                        z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę
-                        występującą w
-                        alfabecie
-                        trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego
-                        <hr>
-
-                        <i>abcdefghijklmnopqrstuvwxyz</i><hr>
-
-                        to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
-                        <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
-                        Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie
-                        litera
-                        <i>a</i> itd.
+                        Kod Hamminga to liniowy kod korekcyjny wynaleziony przez Richarda Hamminga.
                     </p>
+
+                    <img class="img-fluid d-block img-thumbnail" src="images\hamming.jpg" alt="Hamming">
+
+                    <p class="mt-2"><b>Richard Wesley Hamming </b> - (ur. 11 lutego 1915 w Chicago, zm. 7 stycznia 1998 w Monterey w stanie Kalifornia) – matematyk amerykański, którego prace wywarły istotny wpływ na nauki komputerowe i telekomunikację</p>
+
+
+                    <h3 class="mt-4">Właściwości</h3>
+                    <p>Kod Hamminga wykrywa i koryguje błędy polegające na przekłamaniu jednego bitu (ang.) single error
+                        correction. Dla niezawodnej transmisji wymagane jest, aby odległość Hamminga między słowami
+                        transmitowanym i odbieranym, wynosiła 0 lub 1. Kod ten może wykrywać (ale już nie korygować)
+                        błędy podwójne (dwa jednocześnie przekłamane bity), (ang.) double error detection.
+
+                    <p>Dla porównania: prosty kod z kontrolą parzystości nie może korygować żadnych błędów ani też nie
+                        może być używany do detekcji błędu na więcej niż jednym bicie.</p>
+
+                    <p>W sensie matematycznym kody Hamminga są klasą liniowych kodów binarnych. Dla każdej liczby
+                        całkowitej m>1 istnieje kod o parametrach:<br> [2<sup>m</sup> - 1, 2<sup>m</sup> - m - 1, 3]
+                        <br>Macierz kontroli parzystości dla kodu Hamminga tworzy się wypisując wszystkie kolumny o długości
+                        m, które są parami niezależne.</p>
+
+                    <p>Z uwagi na swoją prostotę kody Hamminga są szeroko używane w pamięciach komputerowych (RAM).</p>
                 </div>
                 <div class="col-md-6 col-12 p-5 codediv">
                     <h2 class="display-6">KODER/DEKODER</h2>
                     <h4>Instrukcja:</h4>
                     <p>
-                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod" możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
-                        <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
-                        <hr>
+                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod"
+                        możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
+                    <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji
+                        odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
+                    <hr>
 
                     <h3>Formularz używający szyfru Cezara</h3>
 
 
 
-                   
 
-                        <div class="iodata mt-4">
-                            <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                onkeyup="drukuj()">
 
-                            <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
-                                onkeyup="drukuj()">
-                        </div>
-                        <div class="result mt-5">
-                            <p class="fw-bold">Tekst kodowany:</p>
-                            <output id="kodowany" type="text" value=" "></output>
+                    <div class="iodata mt-4">
+                        <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
+                            onkeyup="drukuj()">
 
-                            <p class="fw-bold pt-2">Tekst dekodowany:</p>
-                            <output id="dekodowany" type="text" value=" "></output>
-                        </div>
-                    
+                        <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
+                            onkeyup="drukuj()">
+                    </div>
+                    <div class="result mt-5">
+                        <p class="fw-bold">Tekst kodowany:</p>
+                        <output id="kodowany" type="text" value=" "></output>
+
+                        <p class="fw-bold pt-2">Tekst dekodowany:</p>
+                        <output id="dekodowany" type="text" value=" "></output>
+                    </div>
+
 
                 </div>
             </div>
