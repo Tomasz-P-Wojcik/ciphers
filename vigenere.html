@@ -85,54 +85,87 @@
                     <h2 class="display-6 ">SZYFR VIGENERE'A</h2>
 
                     <h3>Opis</h3>
-                    <p>
-                        Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował
-                        swoją
-                        korespondencję
-                        z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę
-                        występującą w
-                        alfabecie
-                        trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego
-                        <hr>
+                    <p>Jeden z klasycznych algorytmów szyfrujących. Należy on do grupy tzw. polialfabetycznych szyfrów
+                        podstawieniowych. Szyfr ten błędnie został przypisany twórcy bardziej skomplikowanego szyfru
+                        Blaise’owi de Vigenère.
 
-                        <i>abcdefghijklmnopqrstuvwxyz</i><hr>
-
-                        to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
-                        <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
-                        Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie
-                        litera
-                        <i>a</i> itd.
+                        Szyfr, który obecnie nazywamy szyfrem Vigenère’a, po raz pierwszy został opisany przez Giovana
+                        Batista Belaso w 1553, w broszurze zatytułowanej La cifra del. Sig. Giovan Batista Belaso
                     </p>
+
+                    <h3>Kryptoanaliza</h3>
+                    <p>Oba szyfry były często mylone i określane terminem „le chiffre indéchiffrable” (nierozszyfrowalny
+                        szyfr).</p>
+
+                    <p>Pierwszy opis złamania szyfru Vigenère’a został opublikowany w książce pruskiego dowódcy
+                        Fryderyka Kasiskiego – Die Geheimschriften und die Dechif-frir-kunst („Szyfrogramy i sztuka
+                        deszyfracji”), opublikowanej w 1863.</p>
+
+                    <p>Metoda złamania opierała się na obserwacji, że powtórzenia w szyfrogramie mogą odpowiadać
+                        powtórzeniom w tekście jawnym i kluczu. To z kolei ułatwiało odgadnięcie długości klucza,
+                        następnie samego klucza i odszyfrowania szyfrogramu.</p>
+
+                    <p>Oczywiście metoda ta dotyczyła historycznej wersji szyfru Vigenère’a, która miała skończoną (i w
+                        praktyce zazwyczaj krótką) długość klucza.</p>
+
+                    <p>Pierwsze złamanie szyfru nastąpiło jednak wcześniej – w roku 1854, przy użyciu kryptoanalizy
+                        statystycznej i zostało dokonane przez Charles’a Babbage’a. Istotą złamania szyfru było
+                        podzielenie wiadomości na części w ilości równej długości klucza. W wyniku podziału otrzymywano
+                        urywki wiadomości, które można było traktować jak zaszyfrowane szyfrem monoalfabetycznym.</p>
+
+                    <p>Charles Babbage prawdopodobnie złamał również szyfr Vigenère’a z autokluczem.</p>
+
+                    <h3>Bezwarunkowe bezpieczeństwo</h3>
+                    <p>Szyfr Vigenère’a może być szyfrem nie do złamania (zostało to udowodnione w 1949 przez Claude’a
+                        Elwooda Shannona) przy zachowaniu trzech reguł:</p>
+                    <ul>
+                        <li>Klucz użyty do szyfrowania wiadomości musi być dłuższy lub równy szyfrowanej wiadomości;
+                        </li>
+                        <li>Klucz musi być wygenerowany w sposób całkowicie losowy (nie może istnieć sposób na
+                            odtworzenie klucza na podstawie znajomości działania generatorów liczb pseudolosowych);</li>
+                        <li>Klucz nie może być użyty do zaszyfrowania więcej niż jednej wiadomości.</li>
+                        <li>Dodatkowo jest wymagane, aby osoba znająca klucz nikomu go nie zdradziła.</li>
+                    </ul>
+
                 </div>
                 <div class="col-md-6 col-12 p-5 codediv">
-                    <h2 class="display-6">KODER/DEKODER</h2>
-                    <h4>Instrukcja:</h4>
-                    <p>
-                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod" możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
-                        <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
-                        <hr>
+                    <h2 class="display-6">OPIS</h2>
 
-                    <h3>Formularz używający szyfru Cezara</h3>
+                    <p>Działanie szyfru Vigenère’a oparte jest na następującej tablicy:
+                    </p>
+                    <pre>
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+B C D E F G H I J K L M N O P Q R S T U V W X Y Z A
+C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+E F G H I J K L M N O P Q R S T U V W X Y Z A B C D
+F G H I J K L M N O P Q R S T U V W X Y Z A B C D E
+G H I J K L M N O P Q R S T U V W X Y Z A B C D E F
+H I J K L M N O P Q R S T U V W X Y Z A B C D E F G
+I J K L M N O P Q R S T U V W X Y Z A B C D E F G H
+J K L M N O P Q R S T U V W X Y Z A B C D E F G H I
+K L M N O P Q R S T U V W X Y Z A B C D E F G H I J
+L M N O P Q R S T U V W X Y Z A B C D E F G H I J K
+M N O P Q R S T U V W X Y Z A B C D E F G H I J K L
+N O P Q R S T U V W X Y Z A B C D E F G H I J K L M
+O P Q R S T U V W X Y Z A B C D E F G H I J K L M N
+P Q R S T U V W X Y Z A B C D E F G H I J K L M N O
+Q R S T U V W X Y Z A B C D E F G H I J K L M N O P
+R S T U V W X Y Z A B C D E F G H I J K L M N O P Q
+S T U V W X Y Z A B C D E F G H I J K L M N O P Q R
+T U V W X Y Z A B C D E F G H I J K L M N O P Q R S
+U V W X Y Z A B C D E F G H I J K L M N O P Q R S T
+V W X Y Z A B C D E F G H I J K L M N O P Q R S T U
+W X Y Z A B C D E F G H I J K L M N O P Q R S T U V
+X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
+Y Z A B C D E F G H I J K L M N O P Q R S T U V W X
+Z A B C D E F G H I J K L M N O P Q R S T U V W X Y
+</pre>
 
+<p>Każdy z wierszy tablicy odpowiada szyfrowi Cezara, przy czym w pierwszym wierszu przesunięcie wynosi 0, w drugim 1 itd.</p>
 
+    <p>Aby zaszyfrować pewien tekst, potrzebne jest słowo kluczowe. Słowo kluczowe jest tajne i mówi, z którego wiersza (lub kolumny) należy w danym momencie skorzystać.</p>
 
-                   
-
-                        <div class="iodata mt-4">
-                            <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                onkeyup="drukuj()">
-
-                            <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
-                                onkeyup="drukuj()">
-                        </div>
-                        <div class="result mt-5">
-                            <p class="fw-bold">Tekst kodowany:</p>
-                            <output id="kodowany" type="text" value=" "></output>
-
-                            <p class="fw-bold pt-2">Tekst dekodowany:</p>
-                            <output id="dekodowany" type="text" value=" "></output>
-                        </div>
-                    
 
                 </div>
             </div>

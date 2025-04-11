@@ -86,53 +86,51 @@
 
                     <h3>Opis</h3>
                     <p>
-                        Jeden z najstarszych sposobów szyfrowania pochodzi od Juliusza Cezara, który szyfrował
-                        swoją
-                        korespondencję
-                        z Cyceronem. Sposób ten polegał na tym, że zamiast każdej litery pisał literę
-                        występującą w
-                        alfabecie
-                        trzy miejsca dalej. Tak więc, jeśli użyjemy dzisiejszego alfabetu łacińskiego
-                        <hr>
-
-                        <i>abcdefghijklmnopqrstuvwxyz</i><hr>
-
-                        to zamiast <i>c</i> będziemy pisać <i>f</i>, zamiast <i>g</i> piszemy
-                        <i>j</i>, zamiast <i>y</i> piszemy <i>b</i>.
-                        Alfabet traktujemy cyklicznie, tzn. po ostatniej literze <i>z</i> następuje ponownie
-                        litera
-                        <i>a</i> itd.
+                        Szyfr z kluczem jednorazowym (and. one-time pad) jest szyfrem, którego przy poprawnym
+                        wykorzystaniu nie można złamać. Został zaproponowany w 1917 r. przez Majora Josepha Mauborgne’a
+                        oraz Gilberta Vernam’a. W pierwotnej wersji klucz jednorazowy był długim ciągiem przypadkowych
+                        znaków kodowych, zapisanych na taśmie perforowanej do dalekopisu. W celu otrzymania szyfrogramu,
+                        należało dodać modulo 26 jedną literę klucza do dokładnie jednego znaku tekstu jawnego. Aby
+                        wykonać dodawanie modularne liter należy przypisać im odpowiadające liczby: A-0, B-1, …Z-25. Dla
+                        wyniku dodawania wyznaczamy resztę z dzielenia przez 26 (z tylu liter składa się alfabet j.
+                        angielskiego).
                     </p>
+                    <p>Poniżej film o szyfrowaniu Vernama Khan Academy Po Polsku
+                    </p>
+                    <div class="ytcont">
+
+                        <iframe class="ytifresp" src="https://www.youtube.com/embed/F5Li7NpyRvE"
+                            title="Historia kryptografii 4/8 - Szyfr z kluczem jednorazowym"></iframe>
+
+                    </div>
                 </div>
                 <div class="col-md-6 col-12 p-5 codediv">
-                    <h2 class="display-6">KODER/DEKODER</h2>
-                    <h4>Instrukcja:</h4>
+                    <h2 class="display-6">Stosowanie</h2>
                     <p>
-                        W poniższym formularzu w polu "Tekst Wejściowy" wprowadź tekst do zakodowania, a w polu "Kod" możesz wprowadzić liczbę całkowitą, o którą będzie przestawiony wprowadzony tekst.</p>
-                        <p> Wynik kodowania uzyskamy w polu "Tekst kodowany". Pole "Tekst dekodowany" jest wynikiem operacji odwrotnej do kodowania gdzie zakodowany kod umieszczony jest w polu "Tekst Wejściowy"</p>
-                        <hr>
+                        Każdy klucz używany jest tylko raz, do zaszyfrowania tylko jednej wiadomości. Klucz tworzony
+                        jest w sposób losowy, przeciwnik nie ma informacji, która może ułatwić złamanie szyfru. Po
+                        zaszyfrowaniu wiadomości nadawca niszczy strony lub taśmę perforowaną z wykorzystanym zbiorem
+                        znaków. Odbiorca dysponuje identycznym zbiorem i używa tych samych znaków zbioru do
+                        odszyfrowania każdego znaku szyfrogramu. Podobnie jak nadawca po odszyfrowaniu wiadomości
+                        niszczy zbiór znaków stanowiących klucz. Przy nadawaniu nowej wiadomości trzeba zastosować nowy
+                        zbiór znaków i nowe znaki klucza.</p>
 
-                    <h3>Formularz używający szyfru Cezara</h3>
+                    <p>Szyfrowanie z kluczem jednorazowym może być rozszerzone na dane binarne. Zamiast zestawu znaków
+                        są stosowane klucze binarne.</p>
+
+                    <p class="pt-2">Metoda generacji i użycia klucza kryptograficznego wymaga by:</p>
+
+                    <p>
+                    <ol>
+                        <li>Klucz użyty do szyfrowania wiadomości był dłuższy lub równy szyfrowanej wiadomości.</li>
+
+                        <li>Klucz musi być wygenerowany w sposób całkowicie losowy (nie może istnieć sposób na
+                            odtworzenie klucza na podstawie znajomości działania generatorów liczb pseudolosowych).</li>
+                        <li>Klucz nie może być użyty do zaszyfrowania więcej niż jednej wiadomości.</li>
+                    </ol>
+                    </p>
 
 
-
-                   
-
-                        <div class="iodata mt-4">
-                            <p class="fw-bold">Tekst Wejściowy: </p><input id="haslo" type="text" name="haslo" value=""
-                                onkeyup="drukuj()">
-
-                            <p class="fw-bold pt-2">Kod:</p><input id="kod" type="text" name="kod" value="1"
-                                onkeyup="drukuj()">
-                        </div>
-                        <div class="result mt-5">
-                            <p class="fw-bold">Tekst kodowany:</p>
-                            <output id="kodowany" type="text" value=" "></output>
-
-                            <p class="fw-bold pt-2">Tekst dekodowany:</p>
-                            <output id="dekodowany" type="text" value=" "></output>
-                        </div>
-                    
 
                 </div>
             </div>
