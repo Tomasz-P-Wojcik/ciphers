@@ -247,3 +247,8 @@ output {
  .result {
   background-color:lightgreen;
  }
+
+ .flex-sm-column {
+  width:fit-content;
+   
+ }
